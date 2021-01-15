@@ -87,6 +87,11 @@ const vueApp = new Vue({
                 if (die < 0.25)
                     this.characterId = "funkynaito"
             }
+            
+            if (Notification.permission === "default")
+            {
+                Notification.requestPermission();
+            }
 
             this.loggedIn = true;
             this.selectedCharacter = characters[this.characterId];
@@ -226,6 +231,13 @@ const vueApp = new Vue({
                 
                 chatLog.appendChild(messageDiv);
                 chatLog.scrollTop = chatLog.scrollHeight;
+                
+                
+                
+                if (Notification && Notification.permission === "granted" && !document.hasFocus())
+                {
+                    new Notification("Gikopoi", {body: userName + ": " + msg});
+                }
             });
 
             this.socket.on("server-stats", (areaId, serverStats) =>
