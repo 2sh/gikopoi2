@@ -3826,6 +3826,52 @@ export const rooms: { [roomId: string]: Room } = {
         },
         streamSlotCount: 3,
     },
+    karaoke_box: {
+        id: "karaoke_box",
+        group: "gikopoi",
+        scale: 0.7,
+        size: { x: 7, y: 5 },
+        originCoordinates: { x: 0, y: 240 },
+        spawnPoint: "door",
+        backgroundImageUrl: "rooms/karaoke_box/background.svg",
+        objects: [
+            { x: 50, y: -1, url: "overlay.svg", offset: { x: 0, y: 0 }, scale: 0.7 },
+        ],
+        sit: [
+            // left sofa
+            { x: 2, y: 0 },
+            { x: 3, y: 0 },
+            { x: 4, y: 0 },
+            { x: 5, y: 0 },
+            { x: 6, y: 0 },
+            // right sofa
+            { x: 6, y: 1 },
+            { x: 6, y: 2 },
+            { x: 6, y: 3 },
+            { x: 6, y: 4 },
+        ],
+        blocked: [
+            // stuff on the left
+            { x: 0, y: 1 },
+            { x: 0, y: 2 },
+            { x: 0, y: 3 },
+            { x: 0, y: 4 },
+            // table in the middle
+            { x: 2, y: 2 },
+            { x: 2, y: 3 },
+            { x: 3, y: 2 },
+            { x: 3, y: 3 },
+            { x: 4, y: 2 },
+            { x: 4, y: 3 },
+        ],
+        forbiddenMovements: [
+            // { xFrom: 4, yFrom: 4, xTo: 5, yTo: 4 },
+        ],
+        doors: {
+            door: { x: 0, y: 0, direction: "right", target: { roomId: "bar_st", doorId: "right" } },
+        },
+        streamSlotCount: 2,
+    },
 };
 
 
