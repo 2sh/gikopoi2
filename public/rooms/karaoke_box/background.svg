@@ -331,4 +331,10 @@
         <image id="_Image10" width="36px" height="34px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAYAAAA3WXuFAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA3UlEQVRYhc3VUQrEIAxF0VdwrV1rF1QKRqPzMUQQHOm0anJBEAJyyI8bFNr3Pf+abVYgAEBEa0B3IESEEMJc0D+QEAJijHNATyDMDGYeC3oDYWaklMaARkBSSsg5vwONhMh5BJoBeQSaCcn5+/Qt0AqI1AWthHQ3pAGRKpAmpAJZgBRQD7MSIjkrkCZIEwIAx3FszgpE7u48TxOQArquywSkgLz3JiAFREQmIAUUYzQBKaDWZjQgTZAmpAJZgBSQFYjkrECk5ueqAZFugVZApC5oJURqgjQgUgXShEgfjGfXhgyxNAkAAAAASUVORK5CYII="/>
         <radialGradient id="_Radial11" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(97.5087,18.8958,-6.71032,49.492,244.454,139.723)"><stop offset="0" style="stop-color:#a4c7a2;stop-opacity:0.2"/><stop offset="0.44" style="stop-color:#87c183;stop-opacity:0.14"/><stop offset="1" style="stop-color:#43b33b;stop-opacity:0"/></radialGradient>
     </defs>
+    <g style="transform: translate(90px, 333px) rotate(180deg);">
+        <path style="transform: scale(4.3)" d="M10.663 2.778 5.384.132.132 2.752l5.292 2.645-2.01 1.006 9.22.066V1.865l-1.971.913" fill="#fc6"
+            fill-opacity=".6" />
+        <path style="transform: scale(4.3)" d="M12.634 1.865V6.47l-9.22-.066 2.01-1.006L.132 2.752 5.384.132l5.279 2.646z" fill="none" stroke="#f60"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" stroke-opacity=".6" stroke-width=".265" />    
+    </g>
 </svg>
