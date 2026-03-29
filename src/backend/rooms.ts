@@ -3829,13 +3829,18 @@ export const rooms: { [roomId: string]: Room } = {
     karaoke_box: {
         id: "karaoke_box",
         group: "gikopoi",
+        backgroundColor: "#000000",
         scale: 0.7,
         size: { x: 7, y: 5 },
+        objectRenderSortMethod: "diagonal_scan",
         originCoordinates: { x: 0, y: 240 },
         spawnPoint: "door",
         backgroundImageUrl: "rooms/karaoke_box/background.svg",
         objects: [
-            { x: 50, y: -1, url: "overlay.svg", offset: { x: 0, y: 0 }, scale: 0.7 },
+            {"x":7,"y":-1,"width":1,"height":1,"url":"overlay.svg","scale":0.7,"offset":{"x":0,"y":0}},
+            {"x":2,"y":0,"width":4,"height":1,"url":"sofa-left.svg","scale":0.93,"offset":{"x":87,"y":238}},
+            {"x":0,"y":-1,"width":1,"height":4,"url":"sofa-right.svg","scale":0.93,"offset":{"x":87,"y":239}},
+            {"x":6,"y":0,"width":1,"height":1,"url":"stool.svg","scale":0.93,"offset":{"x":88,"y":237}},
         ],
         sit: [
             // left sofa

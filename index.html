@@ -97,6 +97,14 @@
                                 tabindex="-1"></button>
                         </div>
                     </div>
+
+                    <room-object-editor
+                        v-if="isRoomObjectEditorVisible"
+                        :current-room="currentRoom"
+                        @adjust-object="adjustRoomObject"
+                        @set-object="setRoomObject"
+                    ></room-object-editor>
+
                     <div id="toolbar" v-if="!connectionRefused">
                         <div id="toolbar-text-input">
                             {{ $t("ui.label_input") }} <textarea id="input-textbox"
@@ -393,6 +401,7 @@
                             ></janken-slot>
                     </template>
                 </div>
+
 
                 <div class="popup-overlay" v-if="isRulaPopupOpen" v-on:click="closeRulaPopup"></div>
                 <div id="rula-popup" class="popup" v-if="isRulaPopupOpen" v-on:keydown="handleRulaPopupKeydown($event)" tabindex="-1">
