@@ -1776,7 +1776,9 @@ const vueApp = createApp(defineComponent({
             {
                 const objectsByPosition: ObjectsByPosition = {};
 
-                this.currentRoom!.objects.forEach(o => addObject({
+                this.currentRoom!.objects
+                    .filter(o => !o.isHidden)
+                    .forEach(o => addObject({
                     o,
                     type: "room-object",
                     x: o.x,
@@ -1804,6 +1806,7 @@ const vueApp = createApp(defineComponent({
             {
                 return ([] as CanvasObject[]).concat(
                     this.currentRoom!.objects
+                        .filter(o => !o.isHidden)
                         .map(o => ({
                             o,
                             type: "room-object",
@@ -4047,6 +4050,15 @@ const vueApp = createApp(defineComponent({
                 this.loadRoomObjects()
                 return
             }
+            this.isRedrawRequired = true
+        },
+        toggleRoomObjectVisibility(objectIndex: number)
+        {
+            if (!this.currentRoom) return
+            const obj = this.currentRoom.objects[objectIndex]
+            if (!obj) return
+            obj.isHidden = !obj.isHidden
+            this.updateCanvasObjects()
             this.isRedrawRequired = true
         },
     },

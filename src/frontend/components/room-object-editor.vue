@@ -9,6 +9,7 @@ const props = defineProps<{
 const emit = defineEmits<{
     'adjust-object': [objectIndex: number, property: string, delta: number]
     'set-object': [objectIndex: number, property: string, value: number]
+    'toggle-object-visibility': [objectIndex: number]
 }>()
 
 const fields: { label: string; prop: string; step: number }[] = [
@@ -73,6 +74,11 @@ function copyObjectsJson()
         setTimeout(() => { copyStatus.value = 'idle' }, 2000)
     })
 }
+
+function toggleVisibility(objectIndex: number)
+{
+    emit('toggle-object-visibility', objectIndex)
+}
 </script>
 
 <template>
@@ -86,6 +92,9 @@ function copyObjectsJson()
             class="room-object-editor-row"
         >
             <span class="room-object-editor-label">{{ obj.url || ('[' + index + ']') }}</span>
+            <span class="room-object-editor-field">
+                <button @click="toggleVisibility(index)">{{ obj.isHidden ? '無' : '有' }}</button>
+            </span>
             <span v-for="field in fields"
                   :key="field.prop"
                   class="room-object-editor-field">
@@ -118,7 +127,7 @@ function copyObjectsJson()
 
 .room-object-editor-row {
     display: grid;
-    grid-template-columns: 140px repeat(5, auto);
+    grid-template-columns: 140px repeat(6, auto);
     align-items: center;
     gap: 4px;
     padding: 2px 0;

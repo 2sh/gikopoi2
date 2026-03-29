@@ -103,6 +103,7 @@
                         :current-room="currentRoom"
                         @adjust-object="adjustRoomObject"
                         @set-object="setRoomObject"
+                        @toggle-object-visibility="toggleRoomObjectVisibility"
                     ></room-object-editor>
 
                     <div id="toolbar" v-if="!connectionRefused">
