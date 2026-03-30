@@ -275,6 +275,12 @@
             <path d="M138.87,298.775L157.888,289.266L157.888,213.197L138.87,222.706L136.154,232.214L138.87,230.856L138.87,298.775Z" style="fill:#161413;stroke:#020202;stroke-width:1px;"/>
         </g>
     </g>
+    <g style="transform: translate(97px, 335px) scale(5) rotate(180deg);">
+        <path d="M10.663 2.778 5.384.132.132 2.752l5.292 2.645-2.01 1.006 9.22.066V1.865l-1.971.913" fill="#fc6"
+            fill-opacity=".6" />
+        <path d="M12.634 1.865V6.47l-9.22-.066 2.01-1.006L.132 2.752 5.384.132l5.279 2.646z" fill="none" stroke="#f60"
+            stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="3" stroke-opacity=".6" stroke-width=".265" />
+    </g>
     <defs>
         <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(14.3108,0,0,14.3108,27.3328,241.101)"><stop offset="0" style="stop-color:#a49249;stop-opacity:1"/><stop offset="0.51" style="stop-color:#847b46;stop-opacity:1"/><stop offset="1" style="stop-color:#1e303d;stop-opacity:1"/></linearGradient>
         <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(101.755,-165.593,165.593,101.755,339.456,423.104)"><stop offset="0" style="stop-color:#081318;stop-opacity:1"/><stop offset="0.52" style="stop-color:#0d171a;stop-opacity:1"/><stop offset="0.79" style="stop-color:#292d23;stop-opacity:1"/><stop offset="0.89" style="stop-color:#212922;stop-opacity:1"/><stop offset="1" style="stop-color:#0e1e21;stop-opacity:1"/></linearGradient>

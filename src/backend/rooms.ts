@@ -1368,6 +1368,7 @@ export const rooms: { [roomId: string]: Room } = {
             very_left: { x: 9, y: 0, direction: "right", target: { roomId: "kyougijou", doorId: "door"} },
             next_to_light: { x: 18, y: 4, direction: "up", target: { roomId: "yojouhan", doorId: "door"} },
             bottom_left: {x: 12, y: 0, direction: "up", target: {roomId: "meganeya", doorId: "top_right"} },
+            big_dicks: {x: 19, y: 15, direction: "left", target: {roomId: "karaoke_box", doorId: "door"} },
         },
         streamSlotCount: 3,
         games: ["janken"],
@@ -3873,9 +3874,9 @@ export const rooms: { [roomId: string]: Room } = {
             // { xFrom: 4, yFrom: 4, xTo: 5, yTo: 4 },
         ],
         doors: {
-            door: { x: 0, y: 0, direction: "right", target: { roomId: "bar_st", doorId: "right" } },
+            door: { x: 0, y: 0, direction: "right", target: { roomId: "bar_giko_square", doorId: "big_dicks" } },
         },
-        streamSlotCount: 2,
+        streamSlotCount: 3
     },
 };
 
